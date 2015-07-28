@@ -11,33 +11,206 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+  <!--div class="wrapper row"-->
+  <div class="row">
+    <div class="main_logo_container">
+      <div class="main_logo">
+        <a href="#/home"><img ng-src="img/ub-logo.png"><span margin=""> | </span><span> REACHING OTHERS</span></a>
+      </div>
+    </div>
+    <div class="welcome_banner_container">
+      <div class="welcome_banner">
+        <div class="inline">
+          <span class="title inline">Welcome to Student Advisory Services</span>
+        </div>
+        <div class="inline contact"></div>
+        <div class="inline">
+          <img ng-src="img/small_text_separator.png" class="inline">
+          <img ng-src="img/small_horizontal_slide_control.png" class="right_margin inline">
+          <a href="#" class="inline"><span>administrators </span></a>
+          <span class="inline">|</span>
+          <a href="#" class="inline"><span>contact info</span></a></div>
+      </div>
+      <di v class="main_nav">
+        <ul class="menu">
+          <li id="home"><a href="#/home">Home</a></li>
+          <li><a href="#/major_explorers">Major Explorers</a></li>
+          <li><a href="#/alternative_majors">Alternative Majors</a></li>
+          <li><a href="#/sas_staff">SAS Staff</a></li>
+          <li><a href="#/resources">Resources</a></li>
+        </ul>
+      </div>
+    </div>
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
 
-  <div ng-view></div>
+  <div class="row">
+    <img ng-src="img/large_horizontal_slide_control.png" class="large_slide_control left">
+    <div class="container container_shadow">
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+      <div ng-view></div>
+    </div>
+  </div>
+  <!--/div-->
 
-  <div>Angular seed app: v<span app-version></span></div>
+    <div class="footer row">
+      <h1>THE FOOTER</h1>
+    </div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
+  <script src="js/app.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+  <script>
+  /**start slider on page load**/
+  setTimeout(function(){
+    $('.nav li a').on('click', function(){
+      $('.nav li').removeClass('active');
+      $(this).closest('li').addClass('active');
+    });
+
+        $('.slide-viewer').each(function(){
+        var $this = $(this);
+        var $group = $this.find('.slide-group');
+        var $slides = $this.find('.slide');
+        var buttonArray = [];
+        var currentIndex = 0;
+        var timeout;
+        /*855-281-1771
+        upload to navient.com two consecutive pay stubs from within the last 60days
+        spoke with amy on the 06/30*/
+
+      function move(newIndex){
+        var animateLeft, slideLeft;
+        advance();
+        if($group.is(':animated') || currentIndex === newIndex){
+          return;
+        }
+        buttonArray[currentIndex].removeClass('active');
+        buttonArray[newIndex].addClass('active');
+
+          slideLeft = '100%';
+          animateLeft = '-100%';
+
+        $slides.eq(newIndex).css( {left: slideLeft, display: 'block'});
+        $group.animate( {left: animateLeft},1500 , function(){
+          $slides.eq(currentIndex).css( {display : 'none'} );
+          $slides.eq(newIndex).css( {left: 0} );
+          $group.css( {left: 0} );
+          currentIndex = newIndex;
+        });
+      }
+
+      function advance(){
+        clearTimeout(timeout);
+        timeout = setTimeout(function(){
+          if (currentIndex < ($slides.length - 1)) {
+            move(currentIndex + 1);
+          } else {
+            move(0);
+          }
+        }, 4000);
+      }
+      $.each($slides , function(index){
+        var $button = $('<li class=""></li>');
+        if(index === currentIndex){
+          $($button).addClass('active');
+        };
+        $button.on('click', function(){
+          move(index);
+        }).appendTo('.slide-buttons');
+        buttonArray.push($button);
+
+      });
+      advance();
+    });
+  }, 500);
+  </script>
+
+  <script>
+  /***listen for click event on "home" nav button***/
+  var slider_start = function(){
+    $('.nav li a').on('click', function(){
+      $('.nav li').removeClass('active');
+      $(this).closest('li').addClass('active');
+    });
+
+      setTimeout(function(){
+        $('.slide-viewer').each(function(){
+        var $this = $(this);
+        var $group = $this.find('.slide-group');
+        var $slides = $this.find('.slide');
+        var buttonArray = [];
+        var currentIndex = 0;
+        var timeout;
+        /*855-281-1771
+        upload to navient.com two consecutive pay stubs from within the last 60days
+        spoke with amy on the 06/30*/
+
+      function move(newIndex){
+        var animateLeft, slideLeft;
+        advance();
+        if($group.is(':animated') || currentIndex === newIndex){
+          return;
+        }
+        buttonArray[currentIndex].removeClass('active');
+        buttonArray[newIndex].addClass('active');
+
+          slideLeft = '100%';
+          animateLeft = '-100%';
+
+        $slides.eq(newIndex).css( {left: slideLeft, display: 'block'});
+        $group.animate( {left: animateLeft},1500 , function(){
+          $slides.eq(currentIndex).css( {display : 'none'} );
+          $slides.eq(newIndex).css( {left: 0} );
+          $group.css( {left: 0} );
+          currentIndex = newIndex;
+        });
+      }
+
+      function advance(){
+        clearTimeout(timeout);
+        timeout = setTimeout(function(){
+          if (currentIndex < ($slides.length - 1)) {
+            move(currentIndex + 1);
+          } else {
+            move(0);
+          }
+        }, 4000);
+      }
+      $.each($slides , function(index){
+        var $button = $('<li class=""></li>');
+        if(index === currentIndex){
+          $($button).addClass('active');
+        };
+        $button.on('click', function(){
+          move(index);
+        }).appendTo('.slide-buttons');
+        buttonArray.push($button);
+
+      });
+      advance();
+    });
+  }, 500);
+};
+  //setTimeout(function(){
+    $('body').on('click', '#home', slider_start);
+  //}, 530);
+  </script>
 </body>
 </html>
