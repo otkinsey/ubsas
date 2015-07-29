@@ -1,0 +1,80 @@
+[
+  {"pageName":"resources",
+    "content":[
+        {"1":"Academic and Career Planning Guide Checklist - Preparing for Mandatory Advising (PDF)"},
+        {"2":"Academic Integrity"},
+        {"3":"Academic Overviews"},
+        {"4":"New Student Orientation Handout, Spring 2015 (PDF)"},
+        {"5":"University Calendars"},
+        {"6":"Class Schedule"},
+        {"7":"Discovery Seminar Program"},
+        {"8":"Financial Aid"},
+        {"9":"Finish in 4: UB’s Commitment to Your Graduation"},
+        {"10":"Help Center"},
+        {"11":"HUB Academic Advisement Report"},
+        {"12":"HUB Information for Students"},
+        {"13":"MyUB (UBIT Name and Password Required)"},
+        {"14":"Office of the Registrar"},
+        {"15":"Search UB"},
+        {"16":"Student Accounts"},
+        {"17":"SUNY Transfer Appeal Process"},
+        {"18":"TAURUS"},
+        {"19":"Undergraduate Academies"},
+        {"20":"Undergraduate Academic Advising"},
+        {"21":"Undergraduate Catalog"}
+      ]
+    },
+  {
+    "pageName":"sas_staff",
+    "content":[
+      {
+        "profileImage":"img/profileImages/jhollins.jpg",
+        "firstName":"Jacqueline",
+        "lastName":"Hollins",
+        "position":"Director",
+        "email":"jhollins@buffalo.edu",
+        "category":"administrative"
+      },
+      {
+        "profileImage":"img/profileImages/sandquist.jpg",
+        "firstName":"Lisa",
+        "lastName":"Sandquist",
+        "position":"Associate Director",
+        "email":"lms4@buffalo.edu",
+        "category":"administrative"
+      },
+      {
+        "profileImage":"img/profileImages/tuyn.jpg",
+        "firstName":"Lisa",
+        "lastName":"Tuyn",
+        "position":"Associate Director",
+        "email":"lhackett@buffalo.edu",
+      "category":"administrative"
+    },
+    {
+      "profileImage":"img/profileImages/rpolino.jpg",
+      "firstName":"Rose",
+      "lastName":"Polino",
+      "position":"Office Manager",
+      "email":"rmdonius@buffalo.edu",
+      "category":"administrative"
+    },
+    {
+      "profileImage":"img/profileImages/daylward.jpg",
+      "firstName":"Dalene",
+      "lastName":"Aylward",
+      "position":"Prehealth/Senior Academic Advisor",
+      "email":"dmg8@buffalo.edu",
+      "category":"advising"
+    },
+    {
+      "profileImage":"img/profileImages/babbs.jpg",
+      "firstName":"Tommie",
+      "lastName":"Babbs",
+      "position":"Senior Academic Advisor",
+      "email":"babbs@buffalo.edu",
+      "category":"advising"
+    }
+  ]
+}
+]

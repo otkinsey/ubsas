@@ -1,0 +1,50 @@
+[
+  {
+    "profileImage":"img/profileImages/jhollins.jpg",
+    "firstName":"Jacqueline",
+    "lastName":"Hollins",
+    "position":"Director",
+    "email":"jhollins@buffalo.edu",
+    "category":"administrative"
+  },
+  {
+    "profileImage":"img/profileImages/sandquist.jpg",
+    "firstName":"Lisa",
+    "lastName":"Sandquist",
+    "position":"Associate Director",
+    "email":"lms4@buffalo.edu",
+    "category":"administrative"
+  },
+  {
+    "profileImage":"img/profileImages/tuyn.jpg",
+    "firstName":"Lisa",
+    "lastName":"Tuyn",
+    "position":"Associate Director",
+    "email":"lhackett@buffalo.edu",
+    "category":"administrative"
+  },
+  {
+    "profileImage":"img/profileImages/rpolino.jpg",
+    "firstName":"Rose",
+    "lastName":"Polino",
+    "position":"Office Manager",
+    "email":"rmdonius@buffalo.edu",
+    "category":"administrative"
+  },
+  {
+    "profileImage":"img/profileImages/daylward.jpg",
+    "firstName":"Dalene",
+    "lastName":"Aylward",
+    "position":"Prehealth/Senior Academic Advisor",
+    "email":"dmg8@buffalo.edu",
+    "category":"advising"
+  },
+  {
+    "profileImage":"img/profileImages/babbs.jpg",
+    "firstName":"Tommie",
+    "lastName":"Babbs",
+    "position":"Senior Academic Advisor",
+    "email":"babbs@buffalo.edu",
+    "category":"advising"
+  }
+]

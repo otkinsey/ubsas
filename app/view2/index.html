@@ -1,0 +1,35 @@
+<h1>index 2</h1>
+<div id="data">{{contentItems}}</div>
+
+<div><h1>{{contentItems.length}}</h1></div>
+<div>the path is <strong>{{contentPath}}</strong></div>
+
+<div class="row" id="content" ng-switch="contentPath">
+  <div ng-switch-when="sas_staff">This is the content for sas_staff</div>
+  <div ng-switch-when="resources">This is the content for resources</div>
+</div>
+
+<script>
+    /*setTimeout(function(){
+      if($('#data').html() === "view1"){
+        $.ajax({
+          url:'view1/templates/home.html',
+          success: function(result){
+              $('#content').html(result);
+          }
+        });
+  }else{$('#content').html('No');}
+}, 500);
+
+$('#content').on('click', '.menu li', function(){
+var dest = $(this).find('a').html();
+var destMod = dest.replace(' ', '_');
+alert(dest);
+$.ajax({
+  url:'view1/templates/'+destMod+'.html',
+  success: function(result){
+      $('#content').html(result);
+  }
+  });
+});*/
+</script>

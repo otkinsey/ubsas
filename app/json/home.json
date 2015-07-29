@@ -1,7 +1,9 @@
 {
-  "section_1":{
-    "heading":"Student Advising Services advises undergraduate students who are:",
-    "text":{
+  "viewType":"view1",
+  "largeImage":"view1/templates/largeImage/home.html",
+  "sections": [
+    {"heading":"Student Advising Services advises undergraduate students who are:",
+    "text": {
       "bullet_points":[
         {"1":"Exploring Majors"},
         {"2":"Intended Computer Science"},
@@ -14,30 +16,31 @@
       ]
     }
   },
-  "section_2":{
+  {
     "heading":"The services we offer include:",
-    "text":{
-      "bullet_points":[
+    "text": {
+      "bullet_points": [
         {"1":"Providing academic advice for students — especially those who are exploring majors (undecided) through our Major Explorers Program/Class."},
         {"2":"Guiding students in making an informed decision about selecting a major by 45 completed credit hours."},
         {"3":"Assisting students in developing a holistic academic plan that meets degree requirements and incorporates experiential learning such as internships and study abroad."},
         {"4":"Ensuring students understand academic policies/procedures and their implications."},
-        {"5":"Helping students who want or need to transition from an existing major, by exploring new majors while still achieving timely graduation."}
-        {"6":"Presenting Academic Success Workshops."}
+        {"5":"Helping students who want or need to transition from an existing major, by exploring new majors while still achieving timely graduation."},
+        {"6":"Presenting Academic Success Workshops."},
         {"7":"Evaluating alternative and military experiences for university credit."}
       ],
-      "paragraphs":[
+      "paragraphs": [
         {"1":""}
       ]
     }
   },
-  "section_3":{
+  {
     "heading":"Our Mission",
-    "text":{
-      "bullet_points":[],
-      "paragraphs":[
+    "text": {
+      "bullet_points": [],
+      "paragraphs": [
         {"1":"Student Advising Services' mission is to assist University at Buffalo undergraduate students of all backgrounds in the discovery and development of their academic goals through advising."}
       ]
     }
   }
+  ]
 }

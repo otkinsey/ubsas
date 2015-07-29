@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://localhost:8000/app/#/view1/home -->
+<html lang="en" ng-app="myApp" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths ng-scope"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://localhost:8000/app/bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="http://localhost:8000/app/bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="http://localhost:8000/app/css/app.css">
+  <link rel="stylesheet" href="http://localhost:8000/app/css/slider.css">
+  <link rel="stylesheet" href="http://localhost:8000/app/css/bootstrap/css/bootstrap.css">
+  <script src="./My AngularJS App_files/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <!--div class="wrapper row"-->
+  <div class="row">
+    <div class="main_logo_container">
+      <div class="main_logo">
+        <a href="http://localhost:8000/app/#/home"><img ng-src="img/ub-logo.png" src="./My AngularJS App_files/ub-logo.png"><span margin=""> | </span><span> REACHING OTHERS</span></a>
+      </div>
+    </div>
+    <div class="welcome_banner_container">
+      <div class="welcome_banner">
+        <div class="inline">
+          <span class="title inline">Welcome to Student Advisory Services</span>
+        </div>
+        <div class="inline contact"></div>
+        <div class="inline">
+          <img ng-src="img/small_text_separator.png" class="inline" src="./My AngularJS App_files/small_text_separator.png">
+          <img ng-src="img/small_horizontal_slide_control.png" class="right_margin inline" src="./My AngularJS App_files/small_horizontal_slide_control.png">
+          <a href="http://localhost:8000/app/#" class="inline"><span>administrators </span></a>
+          <span class="inline">|</span>
+          <a href="http://localhost:8000/app/#" class="inline"><span>contact info</span></a></div>
+      </div>
+      <di v="" class="main_nav">
+        <ul class="menu">
+          <li id="home"><a href="./My AngularJS App_files/My AngularJS App.html">Home</a></li>
+          <li><a href="http://localhost:8000/app/#/view1/major_explorers">Major Explorers</a></li>
+          <li><a href="http://localhost:8000/app/#/view1/alternative_majors">Alternative Majors</a></li>
+          <li><a href="http://localhost:8000/app/#/view2/sas_staff">SAS Staff</a></li>
+          <li><a href="http://localhost:8000/app/#/view2/resources">Resources</a></li>
+        </ul>
+      </di></div>
+    </div>
+
+
+  <div class="row">
+    <img ng-src="img/large_horizontal_slide_control.png" class="large_slide_control left" src="./My AngularJS App_files/large_horizontal_slide_control.png">
+    <div class="container container_shadow">
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+      <!-- ngView:  --><div ng-view="" class="ng-scope">
+<div id="largeImage" class="ng-scope">
+  <span id="file" style="display:none;" class="ng-binding">view1/templates/largeImage/home.html</span>
+  <div id="test"><div id="slide-wrap">
+  <!--h1 class="title-collapsible">Document Management</h1-->
+  <div class="">
+    <div class="slide-viewer">
+      <div class="slide-group" style="left: -25.3636329225854%;">
+        <div class="slide slide-1" style="display: none;"><img id="image1" src="./My AngularJS App_files/slide1.png"></div>
+        <div class="slide slide-2" style="left: 0px; display: none;"><img src="./My AngularJS App_files/img2.png"></div>
+        <div class="slide slide-3" style="left: 0px; display: block;"><img src="./My AngularJS App_files/img3.png"></div>
+        <div class="slide slide-4" style="left: 100%; display: block;"><img src="./My AngularJS App_files/img4.png"></div>
+      </div>
+    </div>
+    <div class="slider_nav">
+      <div class="nav">
+        <img ng-src="img/slider_control_left.png" class="inline left">
+        <div class="slide-buttons_container inline">
+          <ul class="slide-buttons inline"><li class=""></li><li class=""></li><li class=""></li><li class="active"></li></ul>
+        </div>
+        <img ng-src="img/slider_control_right.png" class="inline right">
+      </div>
+    </div>
+</div><!--end row line 1-->
+<div class="row">
+  <img src="./My AngularJS App_files/info_box.png" class="info_box">
+  <img src="./My AngularJS App_files/info_box.png" class="info_box">
+  <img src="./My AngularJS App_files/info_box.png" class="info_box">
+</div>
+</div></div>
+</div>
+<script class="ng-scope">
+setTimeout(function(){
+  var file = $('#file').html();
+  $.ajax({
+    method:'GET',
+    url: file,
+    success: function(result){
+      $('#test').html(result);
+    }
+  });
+}, 100);
+</script>
+
+<div class="ng-scope"><h1 class="ng-binding"></h1></div>
+<!-- ngRepeat: item in contentItems | filter:query -->
+<div class="row ng-scope" id="content"></div>
+
+<script class="ng-scope">
+/**start slider on page load**/
+setTimeout(function(){
+  $('.nav li a').on('click', function(){
+    $('.nav li').removeClass('active');
+    $(this).closest('li').addClass('active');
+  });
+
+      $('.slide-viewer').each(function(){
+      var $this = $(this);
+      var $group = $this.find('.slide-group');
+      var $slides = $this.find('.slide');
+      var buttonArray = [];
+      var currentIndex = 0;
+      var timeout;
+      /*855-281-1771
+      upload to navient.com two consecutive pay stubs from within the last 60days
+      spoke with amy on the 06/30*/
+
+    function move(newIndex){
+      var animateLeft, slideLeft;
+      advance();
+      if($group.is(':animated') || currentIndex === newIndex){
+        return;
+      }
+      buttonArray[currentIndex].removeClass('active');
+      buttonArray[newIndex].addClass('active');
+
+        slideLeft = '100%';
+        animateLeft = '-100%';
+
+      $slides.eq(newIndex).css( {left: slideLeft, display: 'block'});
+      $group.animate( {left: animateLeft},1500 , function(){
+        $slides.eq(currentIndex).css( {display : 'none'} );
+        $slides.eq(newIndex).css( {left: 0} );
+        $group.css( {left: 0} );
+        currentIndex = newIndex;
+      });
+    }
+
+    function advance(){
+      clearTimeout(timeout);
+      timeout = setTimeout(function(){
+        if (currentIndex < ($slides.length - 1)) {
+          move(currentIndex + 1);
+        } else {
+          move(0);
+        }
+      }, 4000);
+    }
+    $.each($slides , function(index){
+      var $button = $('<li class=""></li>');
+      if(index === currentIndex){
+        $($button).addClass('active');
+      };
+      $button.on('click', function(){
+        move(index);
+      }).appendTo('.slide-buttons');
+      buttonArray.push($button);
+
+    });
+    advance();
+  });
+}, 500);
+</script>
+</div>
+    </div>
+  </div>
+  <!--/div-->
+
+    <div class="footer row">
+      <h1>THE FOOTER</h1>
+    </div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="./My AngularJS App_files/jquery.js"></script>
+  <script src="./My AngularJS App_files/angular.js"></script>
+  <script src="./My AngularJS App_files/angular-route.js"></script>
+  <script src="./My AngularJS App_files/angular-resource.js"></script>
+  <script src="./My AngularJS App_files/app.js"></script>
+  <script src="./My AngularJS App_files/view1.js"></script>
+  <script src="./My AngularJS App_files/view2.js"></script>
+  <script src="./My AngularJS App_files/version.js"></script>
+  <script src="./My AngularJS App_files/version-directive.js"></script>
+  <script src="./My AngularJS App_files/interpolate-filter.js"></script>
+  <script src="./My AngularJS App_files/controllers.js"></script>
+  <script src="./My AngularJS App_files/services.js"></script>
+
+
+
+</body></html>
