@@ -1,7 +1,7 @@
 {
   "viewType":"view1",
   "largeImage":"view1/templates/largeImage/major_explorers.html",
-  "section":[
+  "sections":[
     {
     "heading":"Discover! Connect! Declare!",
     "text":{

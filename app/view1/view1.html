@@ -1,19 +1,28 @@
-<div id="largeImage">
-  <span id="file" style="display:none;">{{pageContent.largeImage}}</span>
-  <div id="test"></div>
-</div>
+<div  id="slide-wrap">
+  <!--h1 class="title-collapsible">Document Management</h1-->
+  <div  class="">
+    <div class="slide-viewer">
+      <div class="slide-group">
+        <div class="slide slide-1"><img id="image1" src="img/slide1.png"></div>
+        <div class="slide slide-2"><img src="img/img2.png"></div>
+        <div class="slide slide-3"><img src="img/img3.png"></div>
+        <div class="slide slide-4"><img src="img/img4.png"></div>
+      </div>
+    </div>
+    <div class="slider_nav">
+      <div class="nav">
+        <img ng-src="img/slider_control_left.png" class="inline left">
+        <div class="slide-buttons_container inline">
+          <ul class="slide-buttons inline"></ul>
+        </div>
+        <img ng-src="img/slider_control_right.png" class="inline right">
+      </div>
+    </div>
+</div><!--end row line 1-->
 <div class="row">
-  <div  class="info_box" ng-repeat="item in pageContent.sections">
-    <p class="heading"><strong>{{item.heading}}</strong></p>
-    <a href="#" class="noDefault">
-      <p class="subheading_link">
-        <span>Learn more</span>
-        <img src="img/left_triangle.png" class="triangle-left">
-        <img src="img/down_triangle.png" class="triangle-down">
-      </p>
-    </a>
-  </div>
-  <div class="content"></div>
+  <img ng-src="img/info_box.png" class="info_box">
+  <img ng-src="img/info_box.png" class="info_box">
+  <img ng-src="img/info_box.png" class="info_box">
 </div>
 <script>
 setTimeout(function(){
@@ -27,6 +36,10 @@ setTimeout(function(){
   });
 }, 100);
 </script>
+
+<div><h1>{{contentLength}}</h1></div>
+<div ng-repeat="item in contentItems | filter:query"><h1>{{item.pageNumber}}</h1></div>
+<div class="row" id="content"></div>
 
 <script>
 /**start slider on page load**/

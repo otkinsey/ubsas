@@ -1,0 +1,9 @@
+dynamically generate info-boxes
+error handling page 404
+add moving elements
+add detail view to sas_staff
+    -"more info"
+    -detailed information window
+add links to resources
+
+  -

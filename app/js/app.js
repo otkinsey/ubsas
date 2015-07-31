@@ -12,8 +12,7 @@ var myApp = angular.module('myApp', [
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
   when('/',{
-    templateUrl:'view1/index.html',
-    contorller:'ContentCtrl'
+    templateUrl:'view1/view1.html',
   }).
   when('/view1/:contentId',{
     templateUrl:'view1/index.html',

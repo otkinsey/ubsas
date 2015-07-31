@@ -79,6 +79,13 @@
   <script src="components/version/interpolate-filter.js"></script>
   <script src="js/controllers.js"></script>
   <script src="js/services.js"></script>
+  <script>
+    $('body').on('click', '.subheading_link', function(){
+        event.preventDefault();
+        $(this).find('.triangle-left').toggle();
+        $(this).find('.triangle-down').toggle();
 
+    });
+  </script>
 </body>
 </html>
