@@ -2,9 +2,10 @@ dynamically generate info-boxes(done)
 fix routing issues
 error handling page 404
 add moving elements
+  -figure out animation code(done)
+  -add sidepanel data
 add detail view to sas_staff
     -"more info"
     -detailed information window
 add links to resources
-
   -

@@ -11,8 +11,8 @@ function($resource){
   });
 }]);
 
-myAppServices.factory('InfoBox', ['$resource', function($resource){
-  return $resource('json/:infoBoxId.json', {}, {
-    query:{method: 'GET', params:{infoBoxId:'infoBox'}, isArray:true}
+myAppServices.factory('SidePanel', ['$resource', function($resource){
+  return $resource('json/side_menu.json', {}, {
+    query:{method:'GET', isArray:true}
   });
 }]);

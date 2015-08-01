@@ -12,8 +12,13 @@ ul{
   list-style:none;
 }
 
+a{
+  cursor:pointer;
+}
+
 a:link{
   text-decoration:none;
+  color:inherit;
 }
 
 .menu {
@@ -94,8 +99,10 @@ a:link{
 .welcome_links{
   position: absolute;
   margin: 23px 0 0 0;
-  left: 36px;
+  left: 43px;
   float: left;
+  width: 180px;
+  /* display: none; */
 }
 
 .title{
@@ -139,11 +146,12 @@ a:link{
 .large_slide_control{
   cursor:pointer;
   position:relative;
-  left: 30px;
-  top:200px;
-  width: 30px;
+  left: 0px;
+  top: 132px;
   z-index: 3;
-  width: 30px;
+  /* width: 26px; */
+  /* height: 75px; */
+  /* display: inline; */
 }
 
 .info_box{
@@ -373,7 +381,39 @@ a:link{
   left: 132px;
   color: #1482DC;
 }
+.subheading{
+  font-size: 12px;
+  color: #1482DC;
+}
 
+.side_menu_button{
+  //min-height: 30px;
+  width:100%;
+  //border-top:1px  #fff solid;
+  border-top: 1px  #73B3DD solid;
+  border-bottom: 1px #146296 solid;
+  background:#1482dc;
+  font:12px arial;
+  color:#fff;
+  padding:10px 15px;
+}
+
+.side_panel_heading{
+  background: #0F4F7A;
+  border-bottom: 1px #0C3C56 solid;
+
+  font: 12px arial;
+  color: #fff;
+  padding: 10px;
+}
+
+.sub_script{
+  font:9px arial;
+}
+
+.side_panel_heading:first-child{
+  border-radius: 4px 4px 0 0;
+}
 .triangle-left{
   display:inline;
 }
@@ -383,22 +423,24 @@ a:link{
 }
 
 .side_panel{
-  min-height:300px;
-  width:200px;
+  min-height: 131px;
+  width: 214px;
   background:#fff;
   border-radius:4px;
-  position: relative;
-  right: 200px;
+  position: absolute;
+  left: -214px;
   top:100px;
-  border:1px #1482DC solid;
+  /* border:1px #1482DC solid; */
+  background: #1482dc;
+  float: left;
 }
 
 .small_slide_control{
   position: absolute;
-  display: inline-block;
+  /* display: inline-block; */
   float: left;
-  left: 5px;
-  height: 85px;
+  left: 4px;
+  /* height: 85px; */
   margin: 15px 0 0  0;
 }
 
@@ -412,19 +454,24 @@ a:link{
 
 .contact_container{
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
+  /* overflow-y: visible; */
   width: 337px;
+  height: 90px;
 }
 
 .contact{
-  position:relative;
-  right:300px;
-  display: none;
-  height:100px;
+  position: absolute;
+  left: -303px;
+  /* display: none; */
+  /* height:100px; */
   width: 303px;
   background:#fff;
   border-radius:0 4px 4px 0;
   float: left;
+  font: 11px arial;
+  color: #777;
+  padding: 8px 0 0 8px;
 }
 
 #largeImage{
@@ -434,4 +481,16 @@ a:link{
 .large_separator{
   display:inline-block;
   float:left;
+}
+
+.large_slide_menu{
+  position: absolute;
+  padding:0;
+  left: 30px;
+  z-index: 3;
+}
+
+.small_slide_menu{
+  position:absolute;
+  left: 0px;
 }

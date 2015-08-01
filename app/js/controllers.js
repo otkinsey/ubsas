@@ -15,7 +15,7 @@ myAppControllers.controller('ContentCtrl', ['$scope', '$routeParams', 'Content',
    $scope.pageContent = Content.get({contentId: $routeParams.contentId});
  }]);
 
- myAppControllers.controller('InfoBoxCtrl', ['$scope', '$routeParams', 'InfoBox',
-  function($scope, $routeParams, InfoBox){
-    $scope.infobox = InfoBox.get({infoBoxId: $routeParams.infoBoxId});
+myAppControllers.controller('SidePanel', ['$scope', 'SidePanel',
+  function($scope, SidePanel){
+    $scope.sideMenuButtons = SidePanel.query();
   }]);

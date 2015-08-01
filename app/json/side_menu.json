@@ -1,0 +1,33 @@
+[
+    {"sections":[
+    {"text":"Prehealth Students",
+    "url":"http://prehealth.buffalo.edu/"},
+    {"text":"Prelaw Students",
+    "url":"http://prelaw.buffalo.edu/"},
+    {"text":"ACT NOW! Program",
+    "url":"http://sas.buffalo.edu/actnow/index.php"}
+  ]},
+    {"announcements":[
+    {
+      "date":"Jul 29, 2015",
+      "linkText":"Fall Semester 2015 – Classes begin Monday, August 31, 2015 ",
+      "linkUrl":"http://blogs.advising.buffalo.edu/beadvised/fall-semester-2015-classes-begin-monday-august-31-2015/",
+      "aText":"Fall semester 2015 classes begin on Monday, August 31, 2015 Things you will want to do before hand:",
+      "aTextUrl":"http://blogs.advising.buffalo.edu/beadvised/fall-semester-2015-classes-begin-monday-august-31-2015/"
+    },
+    {
+      "date":"Jul 22, 2015",
+      "linkText":"Sunny summer day  ",
+      "linkUrl":"http://blogs.advising.buffalo.edu/beadvised/sunny-summer-day/",
+      "aText":"Fall semester 2015 classes begin on Monday, August 31, 2015 Things you will want to do before hand:",
+      "aTextUrl":"http://blogs.advising.buffalo.edu/beadvised/sunny-summer-day/"
+    },
+    {
+      "date":"Jul 21, 2015",
+      "linkText":"Looking for a cool 1.0 credit hour course? Look at Discovery Seminars!",
+      "linkUrl":"http://blogs.advising.buffalo.edu/beadvised/looking-for-a-cool-1-0-credit-hour-course-look-at-discovery-seminars/",
+      "aText":"About the Discovery Seminars The Discovery Seminar Program seeks to provide primarily first and",
+      "aTextUrl":"http://blogs.advising.buffalo.edu/beadvised/looking-for-a-cool-1-0-credit-hour-course-look-at-discovery-seminars/"
+    }
+  ]}
+]
