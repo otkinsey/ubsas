@@ -11,8 +11,9 @@ var myApp = angular.module('myApp', [
 ]);
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
-  when('/',{
+  when('/home',{
     templateUrl:'view1/view1.html',
+    controller:'ContentCtrl'
   }).
   when('/view1/:contentId',{
     templateUrl:'view1/index.html',
@@ -34,5 +35,5 @@ myApp.config(['$routeProvider', function($routeProvider) {
   when('/sas_staff', {
     templateUrl:'view1/templates/sas_staff.html'
   }).*/
-  otherwise({redirectTo: '/'});
+  otherwise({redirectTo: '/view1/home'});
 }]);
