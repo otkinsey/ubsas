@@ -16,10 +16,12 @@ a{
   cursor:pointer;
 }
 
-a:link{
+a:link, a:visited{
   text-decoration:none;
   color:inherit;
 }
+
+
 
 .menu {
   list-style: none;
@@ -30,6 +32,7 @@ a:link{
   width: 960px;
   margin: auto;
   height:42px;
+  color: #337ab7;
 }
 
 
@@ -38,7 +41,7 @@ a:link{
   margin:0 15px 0 0;
   font-size:12px;
   font-weight:bold;
-  padding:;
+  color: #337ab7;
 }
 
 
@@ -122,8 +125,8 @@ a:link{
 }
 
 .footer{
-  height: 200px;
-  background:#ccc;
+  min-height: 200px;
+  background: #15236E url('../img/footer-bg.jpg') no-repeat center top;
   /* display: block; */
 }
 
@@ -146,7 +149,7 @@ a:link{
 .large_slide_control{
   cursor:pointer;
   position:relative;
-  left: 0px;
+  left: 0;
   top: 132px;
   z-index: 3;
   /* width: 26px; */
@@ -157,12 +160,13 @@ a:link{
 .info_box{
   margin: 15px 20px 16px 30px;
   color: #999;
-  width: 245px;
+  width: 94%;
   vertical-align: top;
   /* height: 99px; */
-  border: 1px #eee solid;
+  border: 1px #ddd solid;
   padding: 6px;
   border-radius: 5px;
+  box-shadow: #ccc 0 0 10px 1px;
 }
 .info_box:last-child{/* app css stylesheet */
 html{
@@ -306,8 +310,8 @@ a:link{
 }
 
   position: relative;
-  position: relative;margin: 0px 2px 0 4.7%;
-  left: 11px;
+  position: relative;/* margin: 0px 2px 0 4.7%; */
+  /* left: 11px; */
 }
 
 .left_margin{
@@ -493,4 +497,15 @@ a:link{
 .small_slide_menu{
   position:absolute;
   left: 0px;
+}
+
+.info_box li{
+  margin:10px 0 0 0;
+}
+
+.midfooter_padding
+
+.bptext{
+  max-width: 750px;
+  margin: 0 0 0 10px;
 }

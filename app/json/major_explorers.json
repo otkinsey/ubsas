@@ -8,52 +8,35 @@
       "bullet_points":[
       ],
       "paragraphs":[
-        {"1":"Each year, an average of 15 to 20 percent of the students in UB’s entering freshman class are undecided about their major. Over 60 percent of college students change their major at least one time before graduation."},
-        {"2":"The Major Explorers program is dedicated to assisting first- and second-year students in making an informed decision about selecting a major by 45 completed credit hours."},
-        {"3":"The Major Explorers program additionally supports students who want or need to transition from an existing major, by helping students to explore new majors while still achieving timely graduation."}
+        "Each year, an average of 15 to 20 percent of the students in UB’s entering freshman class are undecided about their major. Over 60 percent of college students change their major at least one time before graduation.",
+        "The Major Explorers program is dedicated to assisting first- and second-year students in making an informed decision about selecting a major by 45 completed credit hours.",
+        "The Major Explorers program additionally supports students who want or need to transition from an existing major, by helping students to explore new majors while still achieving timely graduation."
       ]
     }
   },
   {
     "heading":"As a Major Explorers student, you will be assigned an academic advisor who will help you to:",
-    "subheadings":[
-      {"1":"DISCOVER how your interests and strengths relate to majors and careers."},
-      {"2":"CONNECT to your major through people, resources and services."},
-      {"3":"DECLARE your major and graduate in a timely manner."}
-    ],
     "text":{
       "bullet_points":[
-        {"1":[
-          {"1":"Meet with Your UB Major Explorers Academic Advisor"},
-          {"2":"Review Choosing a Major Resources"},
-          {"3":"Research Exploratory Paths to Majors"},
-          {"4":"Complete the MyPlan Online Self-Assessment Tool"},
-          {"5":"Enroll in UE 101: Major and Career Exploration Seminar"},
-          {"6":"Enroll in UBE 202: Career Planning Course"}
-          ]},
-        {"2":[
-          {"1":"Meet with Departmental Academic Advisors"},
-          {"2":"Visit Career Services’ Office"},
-          {"3":"Attend UB Majors & Careers Night"},
-          {"4":"Enroll in Exploratory Courses"},
-          {"5":"Engage in Campus Activities"},
-          {"6":"Pursue Study Abroad"},
-          {"6":"Join the UB Mentor Program on LinkedIn"}
-          ]},
-        {"3":[
-          {"1":"Apply to an Academic Major"},
-          {"2":"Meet with Departmental Academic Advisors"},
-          {"3":"Consult with Faculty Mentors"},
-          {"4":"Develop an Academic Plan for Graduation"},
-          {"5":"Participate in Academic Clubs"},
-          {"6":"Gain Career Experience through Volunteering and Internships"},
-          {"6":"Network with Professionals in Your Field"}
-          ]}
+          "Meet with Your UB Major Explorers Academic Advisor",
+          "Review Choosing a Major Resources",
+          "Research Exploratory Paths to Majors",
+          "Complete the MyPlan Online Self-Assessment Tool",
+          "Enroll in UE 101: Major and Career Exploration Seminar",
+          "Enroll in UBE 202: Career Planning Course",
+          "Meet with Departmental Academic Advisors",
+          "Visit Career Services’ Office",
+          "Attend UB Majors & Careers Night",
+          "Enroll in Exploratory Courses",
+          "Engage in Campus Activities",
+          "Pursue Study Abroad",
+          "Join the UB Mentor Program on LinkedIn",
+          "Network with Professionals in Your Field"
       ],
       "paragraphs":[
-        {"1":"Each year, an average of 15 to 20 percent of the students in UB’s entering freshman class are undecided about their major. Over 60 percent of college students change their major at least one time before graduation."},
-        {"2":"The Major Explorers program is dedicated to assisting first- and second-year students in making an informed decision about selecting a major by 45 completed credit hours."},
-        {"3":"The Major Explorers program additionally supports students who want or need to transition from an existing major, by helping students to explore new majors while still achieving timely graduation."}
+        "Each year, an average of 15 to 20 percent of the students in UB’s entering freshman class are undecided about their major. Over 60 percent of college students change their major at least one time before graduation.",
+        "The Major Explorers program is dedicated to assisting first- and second-year students in making an informed decision about selecting a major by 45 completed credit hours.",
+        "The Major Explorers program additionally supports students who want or need to transition from an existing major, by helping students to explore new majors while still achieving timely graduation."
       ]
     }
   }

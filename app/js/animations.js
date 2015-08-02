@@ -5,14 +5,14 @@
 /*SLIDING INFO PANELS*/
 /*left slidemenu*/
 $('body').on('click', '.large_slide_control', function(){
-    $(this).animate({left:"214px"},600);
+    $(this).animate({left:"244px"},600);
     $(this).addClass("return");
-    $('.side_panel').animate({left:"0px"}, 600);
+    $('.side_panel').animate({left:"30px"}, 600);
   });
 $('body').on('click', '.return', function(){
-      $(this).animate({left:"0px"},600);
+      $(this).animate({left:"30px"},600);
       $(this).removeClass("return");
-      $('.side_panel').animate({left:"-214px"}, 600);
+      $('.side_panel').animate({left:"-185px"}, 600);
     });
 
 /*contact panel*/

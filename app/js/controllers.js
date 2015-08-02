@@ -19,3 +19,8 @@ myAppControllers.controller('SidePanel', ['$scope', 'SidePanel',
   function($scope, SidePanel){
     $scope.sideMenuButtons = SidePanel.query();
   }]);
+
+myAppControllers.controller('BulletPoints', ['$scope', '$routeParams', 'BulletPoints',
+  function($scope, $routeParams, BulletPoints){
+    $scope.bulletPoints = BulletPoints.get({contentId: $routeParams.contentId});    
+}]);

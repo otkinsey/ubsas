@@ -16,3 +16,9 @@ myAppServices.factory('SidePanel', ['$resource', function($resource){
     query:{method:'GET', isArray:true}
   });
 }]);
+
+myAppServices.factory('BulletPoints', ['$resource', function($resource){
+  return $resource('json/bullet_points/:contentId.json', {}, {
+    query:{method:'GET', params:{contentId:'content'}}
+  });
+}]);

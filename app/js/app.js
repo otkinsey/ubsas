@@ -3,16 +3,18 @@
 // Declare app level module which depends on views, and components
 var myApp = angular.module('myApp', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
   'myApp.version',
   'myAppServices',
   'myAppControllers'
 ]);
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
+  when('/',{
+    templateUrl:'view1/index.html',
+    controller:'ContentCtrl'
+  }).
   when('/home',{
-    templateUrl:'view1/view1.html',
+    templateUrl:'view1/index.html',
     controller:'ContentCtrl'
   }).
   when('/view1/:contentId',{
@@ -35,5 +37,5 @@ myApp.config(['$routeProvider', function($routeProvider) {
   when('/sas_staff', {
     templateUrl:'view1/templates/sas_staff.html'
   }).*/
-  otherwise({redirectTo: '/view1/home'});
+  otherwise({redirectTo: '/'});
 }]);

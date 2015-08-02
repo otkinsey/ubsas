@@ -2,13 +2,13 @@
   "viewType":"view1",
   "largeImage":"view1/templates/largeImage/alternative_majors.html",
   "sections": [
-    {"heading":"",
+    {"heading":"For Students Seeking Alternative Majors",
     "text": {
       "bullet_points":[],
       "paragraphs":[
-        {"1":"If you are considering revising your academic and career plans, we want to work with you! Particularly, if you recently received notification that you did not get accepted to your UB major or you have been dismissed from your current major or program - you are not alone! Over 60% of undergraduate students change their major at least one time before graduation."},
-        {"2":"Follow the steps below and let the offices of Student Advising Services and Career Services personally assist in further exploring your academic and career aspirations. "},
-        {"3":"We are very excited about this opportunity to work with you individually in attaining academic and career success. We look forward to speaking with you soon!"}
+        "If you are considering revising your academic and career plans, we want to work with you! Particularly, if you recently received notification that you did not get accepted to your UB major or you have been dismissed from your current major or program - you are not alone! Over 60% of undergraduate students change their major at least one time before graduation.",
+        "Follow the steps below and let the offices of Student Advising Services and Career Services personally assist in further exploring your academic and career aspirations. ",
+        "We are very excited about this opportunity to work with you individually in attaining academic and career success. We look forward to speaking with you soon!"
       ]
     }
   },
@@ -16,14 +16,14 @@
     "heading":"Next Steps",
     "text": {
       "bullet_points": [
-        {"1":"Watch the Exploring Majors at UB Video Series below. More than 500 students have viewed these videos to better understand the services available at UB and to hear from other UB students who have successfully made a change in major!"},
-        {"2":"Review the Exploring Alternative Major Brochures. The qualities that first attracted you to your major can be found in many other majors and minors at UB."},
-        {"3":"Peruse the Choosing a Major and Changing Your Major resources from the Undergraduate Academic Advisement website."},
-        {"4":"Schedule an advising appointment with Student Advising Services as soon as possible at 716.645.6013. Meet with an Advisor to explore related majors and other academic options that best meet your interests, skills, and abilities, while also aiming to obtain timely graduation. Note: If you already have a new major or academic interest in mind, contact the appropriate advising office for further assistance."},
-        {"5":"Contact Career Services at 716.645.2231. Career Counselors can help you explore options and think in new ways about choosing a major and career that is right for you, including discovering tools and resources to explore your interests, values, and strengths."}
+        "Watch the Exploring Majors at UB Video Series below. More than 500 students have viewed these videos to better understand the services available at UB and to hear from other UB students who have successfully made a change in major!",
+        "Review the Exploring Alternative Major Brochures. The qualities that first attracted you to your major can be found in many other majors and minors at UB.",
+        "Peruse the Choosing a Major and Changing Your Major resources from the Undergraduate Academic Advisement website.",
+        "Schedule an advising appointment with Student Advising Services as soon as possible at 716.645.6013. Meet with an Advisor to explore related majors and other academic options that best meet your interests, skills, and abilities, while also aiming to obtain timely graduation. Note: If you already have a new major or academic interest in mind, contact the appropriate advising office for further assistance.",
+        "Contact Career Services at 716.645.2231. Career Counselors can help you explore options and think in new ways about choosing a major and career that is right for you, including discovering tools and resources to explore your interests, values, and strengths."
       ],
       "paragraphs": [
-        {"1":""}
+
       ]
     }
   },
@@ -32,7 +32,7 @@
     "text": {
       "bullet_points": [],
       "paragraphs": [
-        {"1":"Student Advising Services' mission is to assist University at Buffalo undergraduate students of all backgrounds in the discovery and development of their academic goals through advising."}
+        "Student Advising Services' mission is to assist University at Buffalo undergraduate students of all backgrounds in the discovery and development of their academic goals through advising."
       ]
     }
   }

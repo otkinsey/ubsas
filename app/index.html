@@ -63,8 +63,10 @@
       </div>
     </div>
 
-
   <div class="row">
+<!--
+=============SIDE PANEL START=======================================================================
+-->
     <ul ng-controller="SidePanel" class="large_slide_menu inline left">
       <li class="large_slide_control">
         <img ng-src="img/large_horizontal_slide_control.png">
@@ -74,18 +76,20 @@
           <span>PRE-PROFESSIONAL ADVISING</span>
         </div>
         <div ng-repeat="button in sideMenuButtons[0].sections" class="side_menu_button">
-          <span>{{button.text}} </span><span class="glyphicon glyphicon-circle-arrow-right right"></span>
+          <a ng-href="{{button.url}}"><span>{{button.text}} </span><span class="glyphicon glyphicon-circle-arrow-right right"></span></a>
         </div>
         <div class="side_panel_heading">
           <span>ANNOUNCEMENTS</span>
         </div>
         <div ng-repeat="button in sideMenuButtons[1].announcements" class="side_menu_button">
           <p>{{button.date}}</p>
-          <p>{{button.aText}} <a ng-href="{{aTextUrl}}" class="sub_script"> (...more)</a></p>
+          <p>{{button.aText}} <a ng-href="{{button.aTextUrl}}" class="sub_script"> (...more)</a></p>
         </div>
-        <div class=""
       </li>
     </ul>
+<!--
+=============SIDE PANEL END=======================================================================
+-->
     <div class="container container_shadow">
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -97,7 +101,8 @@
   <!--/div-->
 
     <div class="footer row">
-      <h1>THE FOOTER</h1>
+      <div class="midfooter_padding"></div>
+      <h1></h1>
     </div>
 
   <!-- In production use:
@@ -108,8 +113,8 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-resource/angular-resource.js"></script>
   <script src="js/app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
+  <!--script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script-->
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
