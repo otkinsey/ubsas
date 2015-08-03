@@ -13,6 +13,7 @@ myAppControllers.controller('ContentQuery', ['$scope', 'Content', '$routeParams'
 myAppControllers.controller('ContentCtrl', ['$scope', '$routeParams', 'Content',
  function($scope, $routeParams, Content){
    $scope.pageContent = Content.get({contentId: $routeParams.contentId});
+   $scope.view = true;
  }]);
 
 myAppControllers.controller('SidePanel', ['$scope', 'SidePanel',
@@ -22,5 +23,5 @@ myAppControllers.controller('SidePanel', ['$scope', 'SidePanel',
 
 myAppControllers.controller('BulletPoints', ['$scope', '$routeParams', 'BulletPoints',
   function($scope, $routeParams, BulletPoints){
-    $scope.bulletPoints = BulletPoints.get({contentId: $routeParams.contentId});    
+    $scope.bulletPoints = BulletPoints.get({contentId: $routeParams.contentId});
 }]);

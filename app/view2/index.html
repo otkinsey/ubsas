@@ -1,15 +1,41 @@
 <div class="row" id="content" ng-switch="contentPath">
 <div ng-switch-when="sas_staff">
-    <div ng-repeat="items in contentItems[1].content" class="profileContainer">
-      <div class="profileImage inline">
-        <img ng-src="img/profileImages/{{items.lastName}}.jpg" class="inline">
+    <div ng-repeat="items in contentItems[1].content" class="row">
+      <div class="profileContainer inline faded">
+        <div class="profileImage inline">
+          <img ng-src="img/profileImages/{{items.lastName}}.jpg" class="inline">
+        </div>
+        <div class="text inline">
+          <p><span><strong>name: </strong></span><span>{{items.firstName}} {{items.lastName}}</span></p>
+          <p><span><strong>position: </strong></span><span>{{items.position}}</span></p>
+          <p>
+            <span><strong>email: </strong></span><span>{{items.email}}</span>
+            <a ng-click="view = !view" class="sub_script right remove"><span >more info</span></a>
+          </p>
+        </div>
       </div>
-      <div class="text inline right">
-        <p><span><strong>name: </strong></span><span>{{items.firstName}} {{items.lastName}}</span></p>
-        <p><span><strong>position: </strong></span><span>{{items.position}}</span></p>
-        <p><span><strong>email: </strong></span><span>{{items.email}}</span></p>
+      <!--start profile detail-->
+      <div class="inline right profileDetail" ng-class="view ? 'visible' : 'notVisible'">
+        <div class="row">
+          <div class="inline">
+              <p><h3>{{items.firstName}} {{items.lastName}}</h3></p>
+              <p><h4>{{items.position}}</h4></p>
+              <p><span>{{items.email}}</span></p>
+          </div>
+          <div class="profileImageLarge inline">
+            <img ng-src="img/profileImages/{{items.lastName}}.jpg" class="inline">
+          </div>
+        </div>
+        <div class="row">
+          <span><strong>career path: </strong></span><span>{{items.academicPath}}</span>
+
+        </div>
+        <div class="row">
+          <span><strong>specialty area: </strong></span><span>{{items.specialty}}</span>
+          <p><a ng-click="view = !view" class="sub_script right detailCloser"><span >close</span></a></p>
+        </div>
       </div>
-      <span class="sub_script">more info</span>
+      <!--end profile detail-->
     </div>
 </div>
 <div ng-switch-when="resources">
@@ -19,38 +45,32 @@
   </ul>
 </div>
 </div>
-  <!--div ng-switch-when="sas_staff">
-    <div ng-switch-when="sas_staff" class="profile_container" ng-repeat="item in contentItems | filter: query">
-      <div ng-switch-when="sas_staff" class="profile_image inline">
-        <img ng-switch-when="sas_staff" ng-src="img/{{item.content.lastName}}.jpg">
-        <p>{{item.content.firstName}} {{item.content.lastName}}</p>
-      </div>
-    </div>
-  </div-->
+
 
 </div>
 
 <script>
-    /*setTimeout(function(){
-      if($('#data').html() === "view1"){
-        $.ajax({
-          url:'view1/templates/home.html',
-          success: function(result){
-              $('#content').html(result);
-          }
-        });
-  }else{$('#content').html('No');}
-}, 500);
-
-$('#content').on('click', '.menu li', function(){
-var dest = $(this).find('a').html();
-var destMod = dest.replace(' ', '_');
-alert(dest);
-$.ajax({
-  url:'view1/templates/'+destMod+'.html',
-  success: function(result){
-      $('#content').html(result);
-  }
-  });
-});*/
+setTimeout(function(){
+   $('.profileContainer').hover(function(){
+     $(this).toggleClass('faded');
+   });
+   $('.detailCloser').hover(function(){
+     $('.stay').toggleClass('faded');
+   });
+   $('.remove').click(function(){
+     var elemHeight = $(this).closest('.profileContainer').offset().top;
+     //alert(elemHeight);
+     $('.faded').toggleClass('notVisible');
+     $(this).closest('.profileContainer').addClass('stay');
+     if(elemHeight > 480){
+       $('#content').animate({'height':'1050px'}, 500);
+     }
+   });
+   $('.detailCloser').click(function(){
+     $('.faded').toggleClass('notVisible');
+     $('.stay').addClass('faded');
+     $('.stay').removeClass('stay');
+     $('#content').animate({'height':'774px'});
+   });
+ }, 100);
 </script>

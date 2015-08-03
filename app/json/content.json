@@ -35,6 +35,8 @@
         "lastName":"Hollins",
         "position":"Director",
         "email":"jhollins@buffalo.edu",
+        "academicPath":"I entered UB as an intended business (Marketing) major with the desire to pursue a career as a buyer for a large retail organization (Women's Fashions). However, after completing internships in the fields of business and education, I earned my degree with a focus in Human Resources. I then pursued graduate studies in education, and in 1998, began my career in higher education as an academic advisor for the University at Buffalo. I first served as an advisor for underrepresented (African American, Hispanic and Native American) student populations. In 2000, I moved into the position of Pre-Law Advisor and developed the Pre-Law Student Services Center. In 2003, I was promoted to Assistant Director of Student Advising Services. In 2008, I was appointed as the Director of Academic Advisement and Student Advising Services. I tremendously enjoy working at the university and providing guidance to students as they pursue their academic and career goals.",
+        "specialty":"Academic Review, Financial Aid Satisfactory Academic Progress (SAP)",
         "category":"boss"
       },
       {
@@ -43,6 +45,8 @@
         "lastName":"Sandquist",
         "position":"Associate Director",
         "email":"lms4@buffalo.edu",
+        "academicPath":"I began my college career as a business administration major. I quickly realized that my strengths and interests were in psychology and pursued an undergraduate degree in this field. I enjoyed the campus environment and researched different career opportunities on campus and found that a masters in higher education administration was needed to work in this field.",
+        "specialty":"Military Credit Evaluation",
         "category":"administrative"
       },
       {
@@ -51,7 +55,9 @@
         "lastName":"Tuyn",
         "position":"Associate Director",
         "email":"lhackett@buffalo.edu",
-      "category":"administrative"
+        "academicPath":"I pursued an undergraduate degree in English because I greatly enjoy creative writing and reading about all kinds of people and their life stories. This avid interest in people's memoirs and history led me to pursue a Master's degree in counseling, with a particular interest in wanting to work with people with disabilities. As an Academic Advisor, I greatly enjoy working with students and inspiring students to consider all of the possibilities that their lives can bring.",
+        "specialty":"Military Credit Evaluation",
+        "category":"administrative"
     },
     {
       "profileImage":"img/profileImages/rpolino.jpg",
@@ -59,6 +65,8 @@
       "lastName":"Polino",
       "position":"Office Manager",
       "email":"rmdonius@buffalo.edu",
+      "academicPath":"I have always had a passion for cooking and baking. I studied at ECC in Restaurant and Hotel Management but soon after graduating I married and started a family. I came to UB in 1998 as an Office Manager for Campus Dining and Shops. After over ten years of service with CDS I found that I wanted to experience the academic side of campus. I was not sure I could go back to school after 30 years, but I did. I began taking one class a semester starting in the fall of 2009 and obtained my B.A. in Sociology in the summer of 2014.",
+      "specialty":"Military Credit Evaluation",
       "category":"administrative"
     },
     {
@@ -67,6 +75,8 @@
       "lastName":"Aylward",
       "position":"Prehealth/Senior Academic Advisor",
       "email":"dmg8@buffalo.edu",
+      "academicPath":" I explored careers I found interesting throughout elementary and high school, from astronaut to accountant. These careers were prevented by motion sickness and a dislike for constant, overwhelming mathematics. By high school graduation I decided upon psychology because I find humankind's thoughts and behaviors so intriguing. My desire was to earn my Ph.D. in Neurobiology and perform research on male and female brain differences. Instead I happily focused on College Student Development, which has led me to Student Advising Services. I believe everyone has a mixture of gifts, talents, and skills they can combine to find true happiness in their niche in society and my mixture has led me to student advising.",
+      "specialty":"Military Credit Evaluation",
       "category":"advising"
     },
     {
@@ -75,6 +85,8 @@
       "lastName":"Babbs",
       "position":"Senior Academic Advisor",
       "email":"babbs@buffalo.edu",
+      "academicPath":"I began college not knowing what I wanted to major in. I chose broadcast journalism because I love public speaking. I thought if I had to choose something that would be a fine choice. However, in my senior year, by volunteering and by working with student government elections, I discovered I loved working with students. Therefore I applied and was accepted to the Graduate School of Education for Student Personnel Study.",
+      "specialty":"Military Credit Evaluation",
       "category":"advising"
     }
   ]
