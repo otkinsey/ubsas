@@ -71,8 +71,23 @@ a:link, a:visited{
 
   padding: 6px 10px 7px 0;
 
-  /* padding: 6px 10px 14px 10px; */
+}
 
+.large_slide_control{
+  cursor:pointer;
+  position:relative;
+  left: -30px;
+  top: 132px;
+  z-index: 3;
+  width: 26px;
+  /* height: 75px; */
+  /* display: inline; */
+}
+
+@media (max-width:810px){
+  .large_slide_control img {
+    width:26px;
+  }
 }
 
 .main_logo a{
@@ -148,17 +163,6 @@ a:link, a:visited{
 
 .right{
   float:right;
-}
-
-.large_slide_control{
-  cursor:pointer;
-  position:relative;
-  left: -30px;
-  top: 132px;
-  z-index: 3;
-  /* width: 26px; */
-  /* height: 75px; */
-  /* display: inline; */
 }
 
 .info_box{
@@ -364,10 +368,11 @@ a{
   cursor:pointer;
 }
 
-a:link, a:visited{
-  text-decoration:none;
-  color:inherit;
+a:link, a:visited, a:hover{
+  text-decoration:none ;
+  color:inherit !important;
 }
+
 
 .main_logo_container{
   background-color: #041A9B;
@@ -388,11 +393,10 @@ a:link, a:visited{
 
   /* padding: 6px 10px 14px 10px; */
 
+  color: #fff;
+
 }
 
-.main_logo a{
-  color: #fff;
-}
 
 .main_logo img{
   height:35px;
@@ -428,7 +432,7 @@ a:link, a:visited{
 }
 
 .title{
-  height: 52px;
+  height: 15px;
   font: 20px sans-serif;
 }
 
@@ -483,17 +487,6 @@ a:link, a:visited{
 
 .right{
   float:right;
-}
-
-.large_slide_control{
-  cursor:pointer;
-  position:relative;
-  left: -30px;
-  top: 132px;
-  z-index: 3;
-  /* width: 26px; */
-  /* height: 75px; */
-  /* display: inline; */
 }
 
 .info_box{
@@ -552,8 +545,8 @@ a:link{
 
 }
 
-.main_logo a{
-  color: #fff;
+.main_logo a:{
+  text-decoration:none;
 }
 
 .main_logo img{
@@ -686,7 +679,7 @@ a:link{
     font-weight: bold;
     background: -webkit-linear-gradient(#fff, #eee);
     border-top:1px solid #eee;
-    border-bottom:1px solid #ded;
+    border-bottom: 1px solid #ccc;
     padding: 15px 0 15px 40px;
   }
 }
@@ -857,6 +850,23 @@ a:link{
   /* overflow-y: visible; */
   width: 337px;
   height: 90px;
+  display: inline-block;
+}
+
+@media (max-width:530px){
+  .welcome_container {
+     float: none;
+    padding: 10px 0 10px 23px;
+}
+
+  .contact_container {
+    position: relative;
+    overflow: hidden;
+    /* overflow-y: visible; */
+    width: 337px;
+    height: 90px;
+    display:block;
+  }
 }
 
 .contact{
@@ -1741,18 +1751,6 @@ a:link{
 .small_slide_control img{
   cursor:pointer;
 }
-.welcome_container{
-  float:left;
-  padding: 23px;
-}
-
-.contact_container{
-  position: relative;
-  overflow: hidden;
-  /* overflow-y: visible; */
-  width: 337px;
-  height: 90px;
-}
 
 .contact{
   position: absolute;
@@ -1933,10 +1931,6 @@ a:link{
 .small_slide_control img{
   cursor:pointer;
 }
-.welcome_container{
-  float:left;
-  padding: 23px;
-}
 
 .contact_container{
   position: relative;
@@ -2091,24 +2085,12 @@ a:link{
 .small_slide_control img{
   cursor:pointer;
 }
-.welcome_container{
-  float:left;
-  padding: 23px;
-}
-
-.contact_container{
-  position: relative;
-  overflow: hidden;
-  /* overflow-y: visible; */
-  width: 337px;
-  height: 90px;
-}
 
 .contact{
   position: absolute;
   top: 0px;
   left: -303px;
-  /* display: none; */
+  display: none;
   /* height:100px; */
   width: 303px;
   background:#fff;

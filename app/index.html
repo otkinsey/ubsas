@@ -31,7 +31,7 @@
         <div class="welcome_container inline">
           <span class="title inline">Welcome to Student Advisory Services</span>
         </div>
-        <div class="contact_container inline">
+        <div class="contact_container">
           <img ng-src="img/small_text_separator.png" class="large_separator">
           <ul class="small_slide_menu">
             <li class="contact">
@@ -107,35 +107,38 @@
         <div class="row textColumns">
           <div class="col-16">
             <p>Schools and Colleges</p>
-            <div class="dotBorder"><p ng-repeat="link in footerLinks.Schools_and_Colleges"><span>></span><span>{{link.name}}</span></p></div>
+            <div class="dotBorder"><p ng-repeat="link in footerLinks.Schools_and_Colleges"><a ng-href="{{link.url}}"><span>></span></a><span>{{link.name}}</span></p></div>
           </div>
           <div class="col-16">
             <p>Research ></p>
-            <div class="dotBorder"><p ng-repeat="link in footerLinks.Research"><span>></span><span>{{link.name}}</span></p></div>
+            <div class="dotBorder"><p ng-repeat="link in footerLinks.Research"><a ng-href="{{link.url}}"><span>></span><span>{{link.name}}</span></a></p></div>
           </div>
           <div class="col-16">
             <p>About UB ></p>
-            <div class="dotBorder"><p ng-repeat="link in footerLinks.About_UB"><span>></span><span>{{link.name}}</span></p></div>
+            <div class="dotBorder"><p ng-repeat="link in footerLinks.About_UB"><a ng-href="{{link.url}}"><span>></span><span>{{link.name}}</span></a></p></div>
           </div>
           <div class="col-16">
             <p>Find People &amp; Departments</p>
-            <div class="dotBorder"><p ng-repeat="link in footerLinks.Find_People_and_Departments"><span>></span><span>{{link.name}}</span></p></div>
+            <div class="dotBorder"><p ng-repeat="link in footerLinks.Find_People_and_Departments"><a ng-href="{{link.url}}"><span>></span><span>{{link.name}}</span></a></p></div>
           </div>
           <div class="col-16">
             <p >Resources for</p>
-            <div class="dotBorder"><p ng-repeat="link in footerLinks.Resources_for"><span>></span><span>{{link.name}}</span></p></div>
+            <div class="dotBorder">
+              <p ng-repeat="link in footerLinks.Resources_for">
+                <a ng-href="{{link.url}}"><span>></span><span>{{link.name}}</span></a></p>
+              </div>
           </div>
           <div class="col-16">
             <p>Visiting UB ></p>
-            <div class="dotBorder"><p ng-repeat="link in footerLinks.Visiting_UB"><span>></span><span>{{link.name}}</span></p></div>
+            <div class="dotBorder"><p ng-repeat="link in footerLinks.Visiting_UB"><a ng-href="{{link.url}}"><span>></span><span>{{link.name}}</span></p></a></div>
           </div>
           <div class="col-16">
             <p>UB Social Media ></p>
-            <div class="dotBorder"><p ng-repeat="link in footerLinks.UB_Social_Media"><span>></span><span>{{link.name}}</span></p></div>
+            <div class="dotBorder"><p ng-repeat="link in footerLinks.UB_Social_Media"><a ng-href="{{link.url}}"><span>></span><span>{{link.name}}</span></a></p></div>
           </div>
           <div class="col-16">
             <p>UB Mobile App</p>
-            <div class="dotBorder"><p ng-repeat="link in footerLinks.UB_Mobile_App"><span>></span><span>{{link.name}}</span></p></div>
+            <div class="dotBorder"><p ng-repeat="link in footerLinks.UB_Mobile_App"><a ng-href="{{link.url}}"><span>></span><span>{{link.name}}</span></a></p></div>
           </div>
         </div>
         <div class="row footerImage"><img src="img/ub-logo.png"></div>
