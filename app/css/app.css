@@ -415,7 +415,7 @@ a:link, a:visited, a:hover{
 .welcome_banner{
   position:relative;
   width:960px;
-  height: 84px;
+  height: 103px;
   margin: 0 auto 30px auto;
   padding: 5px 0 0 0;
 }
@@ -2098,7 +2098,7 @@ a:link{
   float: left;
   font: 11px arial;
   color: #777;
-  padding: 8px 0 0 8px;
+  padding: 0px 0 0 8px;
 }
 
 #largeImage{
