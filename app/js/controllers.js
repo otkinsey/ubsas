@@ -16,12 +16,17 @@ myAppControllers.controller('ContentCtrl', ['$scope', '$routeParams', 'Content',
    $scope.view = true;
  }]);
 
+myAppControllers.controller('BulletPoints', ['$scope', '$routeParams', 'BulletPoints',
+  function($scope, $routeParams, BulletPoints){
+    $scope.bulletPoints = BulletPoints.get({contentId: $routeParams.contentId});
+}]);
+
 myAppControllers.controller('SidePanel', ['$scope', 'SidePanel',
   function($scope, SidePanel){
     $scope.sideMenuButtons = SidePanel.query();
   }]);
 
-myAppControllers.controller('BulletPoints', ['$scope', '$routeParams', 'BulletPoints',
-  function($scope, $routeParams, BulletPoints){
-    $scope.bulletPoints = BulletPoints.get({contentId: $routeParams.contentId});
+myAppControllers.controller('FooterLinks', ['$scope', 'FooterLinks',
+  function($scope, FooterLinks){
+    $scope.footerLinks = FooterLinks.query();
 }]);

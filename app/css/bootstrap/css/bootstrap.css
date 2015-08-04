@@ -1418,6 +1418,7 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: 10px;
+  padding: 15px;
 }
 ul ul,
 ol ul,
@@ -1453,6 +1454,7 @@ dt {
 dd {
   margin-left: 0;
 }
+
 @media (min-width: 768px) {
   .dl-horizontal dt {
     float: left;
@@ -1588,11 +1590,13 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  background:#fff;
 }
 @media (min-width: 768px) {
   .container {
     width: 750px;
-  }
+    background: #fff;
+}
 }
 @media (min-width: 992px) {
   .container {

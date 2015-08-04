@@ -1,0 +1,67 @@
+  {
+    "Schools_and_Colleges":[
+    {"name":"Architecture and Planning","url":"http://ap.buffalo.edu/"},
+    {"name":"Arts and Sciences","url":"http://www.cas.buffalo.edu/"},
+    {"name":"Dental Medicine","url":"http://dental.buffalo.edu/"},
+    {"name":"Education","url":"http://gse.buffalo.edu/"},
+    {"name":"Engineering and Applied Sciences","url":"http://engineering.buffalo.edu/"},
+    {"name":"Law","url":"http://www.law.buffalo.edu/"},
+    {"name":"Management","url":"http://mgt.buffalo.edu/"},
+    {"name":"Medicine and Biomedical Sciences","url":"http://medicine.buffalo.edu/"},
+    {"name":"Nursing","url":"http://nursing.buffalo.edu/"},
+    {"name":"Pharmacy and Pharmaceutical Sciences","url":"http://pharmacy.buffalo.edu/"},
+    {"name":"Public Health and Health Professions","url":"http://sphhp.buffalo.edu/"},
+    {"name":"Social Work","url":"http://socialwork.buffalo.edu/"},
+    {"name":"Roswell Park Cancer Institute Graduate Division","url":"https://www.roswellpark.edu/education"}
+  ],
+
+  "Research":[
+    {"name":"Centers and Institutes","url":"http://www.buffalo.edu/home/research/research-centers-and-institutes.html"},
+    {"name":"Strategic Strengths","url":"http://www.buffalo.edu/ub2020/strengths/our_academic_strategicstrengths.html"},
+    {"name":"Libraries","url":"http://library.buffalo.edu/"}
+  ],
+  "About_UB":[
+    {"name":"UB at a Glance","url":"http://www.buffalo.edu/about_ub/ub_at_a_glance.html"},
+    {"name":"World-Class Reputation","url":"http://www.buffalo.edu/about_ub/world-class-reputation.html"},
+    {"name":"Office of the President","url":"http://www.buffalo.edu/president.html"},
+    {"name":"Our Leadership","url":"http://www.buffalo.edu/about_ub/our_leadership.html"},
+    {"name":"UB 2020: Strategic Plan","url":"http://www.buffalo.edu/ub2020.html"},
+    {"name":"2013-14 Progress Report","url":"http://www.buffalo.edu/progress.html"},
+    {"name":"UB Bulls/Athletics","url":"http://www.ubbulls.com/"},
+    {"name":"UB Photos and Videos","url":"http://www.buffalo.edu/home/multimedia.html"},
+    {"name":"Buffalo Niagara: Our Hometown","url":"http://www.buffalo.edu/about_ub/the-buffalo-niagara-region.html"}
+  ],
+  "Find_People_and_Departments":[
+    {"name":"Directories","url":"http://www.buffalo.edu/directory/"},
+    {"name":"A to Z Index","url":"http://www.buffalo.edu/about_ub/a-z-index.html"}
+  ],
+  "Employment":[
+    {"name":"UB Jobs","url":"http://ubjobs.buffalo.edu/"},
+    {"name":"Leadership Searches","url":"http://www.buffalo.edu/leadership-searches.html"}
+  ],
+  "Resources_for":[
+    {"name":"Prospective Students","url":"http://www.buffalo.edu/prospective_students.html"},
+    {"name":"Current Students","url":"http://www.buffalo.edu/students.html"},
+    {"name":"Faculty and Staff","url":"http://www.buffalo.edu/faculty_staff.html"},
+    {"name":"Alumni","url":"http://www.buffalo.edu/home/for-alumni.html"},
+    {"name":"Parents","url":"http://parent.buffalo.edu/"},
+    {"name":"Business Partners","url":"http://www.buffalo.edu/businessengagement/"},
+    {"name":"News Media","url":"http://www.buffalo.edu/news/media-kit.html"}
+],
+  "Visiting_UB":[
+    {"name":"Maps and Directions","url":"http://www.buffalo.edu/home/visiting-ub.html"},
+    {"name":"Book a Campus Visit","url":"http://admissions.buffalo.edu/visit/index.php"}
+  ],
+  "UB_Social_Media":[
+    {"name":"Facebook","url":"http://www.buffalo.edu/home/ub-social-media/facebook.html"},
+    {"name":"YouTube","url":"http://www.buffalo.edu/home/ub-social-media/you-tube.html"},
+    {"name":"LinkedIn","url":"http://www.buffalo.edu/home/ub-social-media/linkedin.html"},
+    {"name":"#UBuffalo","url":"https://twitter.com/search?q=%23UBuffalo&src=hash"},
+    {"name":"#UBBulls","url":"https://twitter.com/search?q=%23UBBulls&src=hash"}
+  ],
+  "UB_Mobile_App":[
+    {"name":"Download Now","url":"http://mobile.buffalo.edu/"},
+    {"name":"img/appStore.png","url":"https://itunes.apple.com/us/app/ub-mobile/id457650145?mt=8"},
+    {"name":"img/googlePlay.png","url":"https://play.google.com/store/apps/details?id=edu.buffalo.ubmobile"}
+  ]
+}

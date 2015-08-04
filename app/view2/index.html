@@ -1,4 +1,7 @@
 <div class="row" id="content" ng-switch="contentPath">
+  <!--
+  ===========SAS STAFF SWITCH BEGINS=====================================================================
+  -->
 <div ng-switch-when="sas_staff">
     <div ng-repeat="items in contentItems[1].content" class="row">
       <div class="profileContainer inline faded">
@@ -38,15 +41,21 @@
       <!--end profile detail-->
     </div>
 </div>
+<!--
+===========SAS STAFF SWITCH ENDS=====================================================================
+
+===========RESOURCES SWITCH BEGINS=====================================================================
+-->
 <div ng-switch-when="resources">
 <div >
   <ul class="resource-list">
-    <li ng-repeat="items in contentItems[0].content"><img ng-src="img/pdf.jpg" class="thumbnail inline"><div class="inline">{{items}}</div></li>
+    <a ng-repeat="items in contentItems[0].content" ng-href="{{items.url}}"><li ><img ng-src="img/pdf.jpg" class="thumbnail inline"><div class="inline">{{items.name}}</div></li></a>
   </ul>
 </div>
 </div>
-
-
+<!--
+===========RESOURCES SWITCH ENDS=====================================================================
+-->
 </div>
 
 <script>

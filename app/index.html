@@ -17,11 +17,13 @@
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-  <!--div class="wrapper row"-->
   <div class="row">
+<!--
+=============HEADER START=======================================================================
+-->
     <div class="main_logo_container">
       <div class="main_logo">
-        <a href="#/home"><img ng-src="img/ub-logo.png"><span margin=""> | </span><span> REACHING OTHERS</span></a>
+        <a href="#/view1/home"><img ng-src="img/ub-logo.png"><span margin=""> | </span><span> REACHING OTHERS</span></a>
       </div>
     </div>
     <div class="welcome_banner_container">
@@ -45,8 +47,6 @@
               <img ng-src="img/small_horizontal_slide_control.png" >
             </li>
             <li class="welcome_links">
-              <a href="#" class="inline"><span>administrators </span></a>
-              <span class="inline">|</span>
               <a href="#" class="contact_info inline"><span>contact info</span></a>
             </li>
           </ul>
@@ -62,8 +62,10 @@
         </ul>
       </div>
     </div>
-
-  <div class="row">
+<!--
+=============HEADER END=======================================================================
+-->
+<div class="row">
 <!--
 =============SIDE PANEL START=======================================================================
 -->
@@ -89,51 +91,74 @@
     </ul>
 <!--
 =============SIDE PANEL END=======================================================================
+
+=============MAIN CONTENT START===================================================================
 -->
     <div class="container container_shadow">
-    <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
       <div ng-view></div>
     </div>
-
   </div>
-  <!--/div-->
-  <!--
-  =============FOOTER START=======================================================================
-  -->
-    <div class="footer row">
+
+
+
+    <div ng-controller="FooterLinks" class="footer row">
       <div class="midfooter_padding"></div>
       <div class="container">
-        <div class="footerImage"><img src="img/ub-logo.png"></div>
+        <div class="row textColumns">
+          <div class="col-16">
+            <p>Schools and Colleges</p>
+            <div class="dotBorder"><p ng-repeat="link in footerLinks.Schools_and_Colleges"><span>></span><span>{{link.name}}</span></p></div>
+          </div>
+          <div class="col-16">
+            <p>Research ></p>
+            <div class="dotBorder"><p ng-repeat="link in footerLinks.Research"><span>></span><span>{{link.name}}</span></p></div>
+          </div>
+          <div class="col-16">
+            <p>About UB ></p>
+            <div class="dotBorder"><p ng-repeat="link in footerLinks.About_UB"><span>></span><span>{{link.name}}</span></p></div>
+          </div>
+          <div class="col-16">
+            <p>Find People &amp; Departments</p>
+            <div class="dotBorder"><p ng-repeat="link in footerLinks.Find_People_and_Departments"><span>></span><span>{{link.name}}</span></p></div>
+          </div>
+          <div class="col-16">
+            <p >Resources for</p>
+            <div class="dotBorder"><p ng-repeat="link in footerLinks.Resources_for"><span>></span><span>{{link.name}}</span></p></div>
+          </div>
+          <div class="col-16">
+            <p>Visiting UB ></p>
+            <div class="dotBorder"><p ng-repeat="link in footerLinks.Visiting_UB"><span>></span><span>{{link.name}}</span></p></div>
+          </div>
+          <div class="col-16">
+            <p>UB Social Media ></p>
+            <div class="dotBorder"><p ng-repeat="link in footerLinks.UB_Social_Media"><span>></span><span>{{link.name}}</span></p></div>
+          </div>
+          <div class="col-16">
+            <p>UB Mobile App</p>
+            <div class="dotBorder"><p ng-repeat="link in footerLinks.UB_Mobile_App"><span>></span><span>{{link.name}}</span></p></div>
+          </div>
+        </div>
+        <div class="row footerImage"><img src="img/ub-logo.png"></div>
+        <div>
+          <p class="left">Contact Us | MyUB | Emergency Information</p>
+          <p class="right">&copy; 2015 University at Buffalo. All rights reserved. | Privacy | Accessibility | Comment Guidelines</p>
+        </div>
       </div>
     </div>
     <!--
     =============FOOTER END=======================================================================
     -->
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
+
   <script src="../node_modules/jquery/dist/jquery.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-resource/angular-resource.js"></script>
   <script src="js/app.js"></script>
-  <!--script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script-->
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
   <script src="js/controllers.js"></script>
   <script src="js/services.js"></script>
   <script src="js/animations.js"></script>
-  <script>
-    $('body').on('click', '.subheading_link', function(){
-        event.preventDefault();
-        $(this).find('.triangle-left').toggle();
-        $(this).find('.triangle-down').toggle();
-
-    });
-  </script>
 </body>
 </html>
