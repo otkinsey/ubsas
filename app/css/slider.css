@@ -56,22 +56,7 @@
         width:200px;
         margin: 16px 0 0 40%;
 }
-@media (max-width:690px){
-  .menu{
 
-  }
-  .menu > li{
-    display: block;
-    width:100%;
-    margin: 0 15px 0 0;
-    font-size: 12px;
-    font-weight: bold;
-    background: -webkit-linear-gradient(#fff, #eee);
-    border-top:1px solid #eee;
-    border-bottom:1px solid #ded;
-    padding: 18px 0 18px 40px;
-  }
-}
 @media (max-width: 650px) {
   .slide img{
     width: 100%;
